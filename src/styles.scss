@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: hsl(217, 54%, 11%);
+
+    .wrapper {
+        width: 375px;
+        padding: 25px;
+        background: hsl(216, 50%, 16%);
+        color: white;
+        font-family: 'Outfit', sans-serif;
+        box-shadow: 0 0 15px black;
+        border-radius: 20px;
+
+        img {
+            width: 100%;
+            border-radius:20px;
+        }
+
+        .opacity:hover {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            opacity: .7;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin: 20px 0 15px;
+            cursor: pointer;
+        }
+
+        .green:hover {
+            color: hsl(178, 100%, 50%);
+            
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 1.7rem;
+            color: hsl(215, 51%, 70%);
+        }
+
+        .cash {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px 0;
+
+            .ethereum {
+                display: flex;
+                align-items: center;
+                color: hsl(178, 100%, 50%);
+
+                img {
+                    width: 15px;
+                    margin-right: 5px;
+                }
+            }
+
+            .clock {
+                display: flex;
+                align-items: center;
+                color: hsl(215, 51%, 70%);
+
+                img {
+                    width: 25px;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            padding: 20px 0 10px;
+            border-top: 1px solid hsl(215, 51%, 70%);
+
+            img {
+                width: 50px;
+                margin-right: 20px;
+            }
+
+            strong {
+                color: white;
+            }
+        }
+    }
+}
